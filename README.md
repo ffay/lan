@@ -1,22 +1,20 @@
 lanproxy
 --------
 
-[README](README_en.md) | [中文文档](README.md)
-
 lanproxy是一个将局域网个人电脑、服务器代理到公网的内网穿透工具，目前仅支持tcp流量转发，可支持任何tcp上层协议（访问内网网站、本地支付接口调试、ssh访问、远程桌面...）。目前市面上提供类似服务的有花生壳、TeamView、GoToMyCloud等等，但要使用第三方的公网服务器就必须为第三方付费，并且这些服务都有各种各样的限制，此外，由于数据包会流经第三方，因此对数据安全也是一大隐患。
 
 ### 相关地址
 
-- 主页 https://lan.io2c.com
-- lanproxy-go-client https://github.com/ffay/lanproxy-go-client
-- 发布包下载地址 https://github.com/ffay/lanproxy/releases
+- 主页 [https://lan.io2c.com](https://lan.io2c.com)
+- lanproxy-go-client [https://github.com/ffay/lanproxy-go-client](https://github.com/ffay/lanproxy-go-client)
+- 发布包下载地址 [https://github.com/ffay/lanproxy/releases](https://github.com/ffay/lanproxy/releases)
 
 ### 使用
 
 #### 获取发布包
 
 -	拉取源码，运行 mvn package，打包后的资源放在distribution目录中，包括client和server
--	或直接下载发布包  https://github.com/ffay/lanproxy/releases
+-	或直接下载发布包  [https://github.com/ffay/lanproxy/releases](https://github.com/ffay/lanproxy/releases)
 
 #### 配置
 
@@ -89,11 +87,11 @@ server.port=4993
 
 ###### 源码地址
 
-https://github.com/ffay/lanproxy-go-client
+[https://github.com/ffay/lanproxy-go-client](https://github.com/ffay/lanproxy-go-client)
 
 ###### 发布包
 
-https://github.com/ffay/lanproxy-go-client/releases
+[https://github.com/ffay/lanproxy/releases](https://github.com/ffay/lanproxy/releases)
 
 ###### 普通端口连接
 
@@ -123,5 +121,5 @@ nohup ./client_linux_amd64 -s SERVER_IP -p SERVER_SSL_PORT -k CLIENT_KEY -ssl tr
 
 #### 其他
 
-- 在家里使用公司的网络，可以和 https://github.com/ffay/http-proxy-server 这个http代理项目配合使用
-- 对于正常网站，80和443端口只有一个，可以和 https://github.com/ffay/proxygateway 这个项目或nginx配合使用，不同域名反向代理到内部其他端口上去，再由其他端口映射到内网即可；对于ssh或远程桌面等可随意选择其他未占用的端口映射到内网
+- 在家里使用公司的网络，可以和 [https://github.com/ffay/http-proxy-server](https://github.com/ffay/http-proxy-server) 这个http代理项目配合使用
+- 对于正常网站，80和443端口只有一个，可以和 [https://github.com/ffay/proxygateway](https://github.com/ffay/proxygateway) 这个项目或nginx配合使用，不同域名反向代理到内部其他端口上去，再由其他端口映射到内网即可；对于ssh或远程桌面等可随意选择其他未占用的端口映射到内网

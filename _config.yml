@@ -1,2 +1,16 @@
+# Basic
+title: Lanproxy
+subtitle: ~~~~~
+description:  ~
+
+url: "https://robotkang.cc"
+
+# Comment
+comment:
+    provider: duoshuo
+    duoshuo:
+     short_name: robotkang
+nav:
+    - {title: 所有文章, description: archive, url: '/archive'}   
+
 theme: jekyll-theme-cayman
-title: test
